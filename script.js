@@ -39,6 +39,8 @@ function game() {
         } else if (playerSelection === "scissors" && computerSelection === "rock") {
             document.getElementById("computer-pts").textContent = parseInt(document.getElementById("computer-pts").textContent) + 1;
             roundResult.textContent = "Computer +1 Rock beats scissors.";
+        } else if (playerSelection === computerSelection) {
+            roundResult.textContent = "It's a tie!";
         }
     }
 
