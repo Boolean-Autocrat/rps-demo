@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-family: monospace;
+    color: orangered;
+    text-align: center;
+}
+
+.game-choice {
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-choice>.btn {
+    background-color: white;
+}
+
+.choice-label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: monospace;
+    color: orangered;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+}
+
+.choice-icon:hover {
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+}
+
+.choice-icon {
+    font-size: 1.75rem;
+    width: fit-content;
+    padding: 1em;
+    border-radius: 10px;
+    border: 5px solid orangered;
+    transition: all 100ms ease-in-out;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.option-display {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 10px;
+}
+
+.option-display>p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: monospace;
+    color: orangered;
+    text-align: center;
+}
+
+.score-tracker {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3em;
+    background-color: black;
+    padding: 1em;
+}
+
+.score-tracker h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-family: monospace;
+    color: blueviolet;
+    text-align: center;
+}
+
+#play-again {
+    margin-top: 1em;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: monospace;
+    background: transparent;
+    color: orangered;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border: 2px solid orangered;
+    padding: 0.25em;
+    border-radius: 10px;
+    transition: all 100ms ease-in-out;
+}
+
+#play-again:hover {
+    color: white;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+#round-result {
+    margin-top: 3em;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: monospace;
+    color: orangered;
+    text-align: center;
+}
+
+#result {
+    margin-top: 1em;
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-family: monospace;
+    color: orangered;
+    text-align: center;
+}
+
+@media (max-width: 512px) {
+    .container {
+        margin: 0 1em;
+    }
+    .score-tracker {
+        flex-direction: column;
+    }
+    #round-no {
+        order: -1;
+    }
+}
+
+#player-opt,
+#computer-opt {
+    color: blueviolet;
+}
